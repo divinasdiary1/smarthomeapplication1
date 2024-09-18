@@ -2,8 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id ("dagger.hilt.android.plugin")
-    id("kotlin-kapt")
-    kotlin("android").version("1.8.0")
     kotlin("kapt")
 }
 
@@ -63,8 +61,5 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.1") // for debugging
 
-    kapt {
-        correctErrorTypes = true
-    }
 
 }
