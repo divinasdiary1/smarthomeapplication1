@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/connected_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connected Devices"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/automation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automation Routines"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <TextView
+        android:id="@+id/nameofuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divina Budhathoki"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="89dp"
+        android:layout_height="537dp"
+        android:text="Smart Light Bulb"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="264dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

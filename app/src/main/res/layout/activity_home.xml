@@ -9,7 +9,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center_vertical"
         android:text="Current Status"
         android:textSize="25sp"
@@ -31,10 +31,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:text="Thermostat"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        tools:layout_editor_absoluteX="48dp" />
+        tools:layout_editor_absoluteX="47dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="Front Door"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="309dp" />
+        tools:layout_editor_absoluteY="325dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -54,7 +54,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.952"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="47dp" />
 
     <TextView
@@ -100,5 +100,65 @@
         app:srcCompat="@android:drawable/ic_popup_reminder"
         tools:layout_editor_absoluteX="339dp"
         tools:layout_editor_absoluteY="664dp" />
+
+    <TextView
+        android:id="@+id/roomlightstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:textColor="#808080"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/thermostatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="72°F"
+        android:textColor="#808080"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <TextView
+        android:id="@+id/frontdoorstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locked"
+        android:textColor="#808080"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <TextView
+        android:id="@+id/securitystatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check front door"
+        android:textColor="#808080"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <TextView
+        android:id="@+id/maintenancestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change air filter"
+        android:textColor="#808080"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/devicemalfunctionstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Living Room Thermostat"
+        android:textColor="#808080"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="536dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

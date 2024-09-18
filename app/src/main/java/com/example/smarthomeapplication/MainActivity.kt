@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
         submitButton.setOnClickListener {
             val user = username.text.toString()
             val pass = password.text.toString()
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)// Using intent to start Home Activity class
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)// Using intent to start Dashboard Activity class
             // Function to perform login
             fun performLogin(username: String, password: String) {
                 if (username.isNotEmpty() && password.isNotEmpty()) {
@@ -62,12 +62,12 @@ class MainActivity : AppCompatActivity() {
                                 val keypass = response.body()?.keypass
                                 Toast.makeText(
                                     this@MainActivity,
-                                    "Login Success! Keypass: $keypass",
+                                    "Login Success! Keypass: $food",
                                     Toast.LENGTH_SHORT
                                 ).show()
 
-                                // Navigate to HomeActivity on successful login
-                                val intent = Intent(this@MainActivity, HomeActivity::class.java)
+                                // Navigate to DashboardActivity on successful login
+                                val intent = Intent(this@MainActivity, DashboardActivity::class.java)
                                 startActivity(intent)
                             } else {
                                 Toast.makeText(
