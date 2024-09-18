@@ -3,7 +3,7 @@
 - [Overview](#overview)
 - [Setup Instructions](#setup-instructions)
 - [API Integration](#api-integration)
-- [Libraries Used](#libraries-used)
+- [Dependencies](#libraries-used)
 
 ## Overview :space_invader:
 This is a Smart Home Control Android App Project as part of a university
