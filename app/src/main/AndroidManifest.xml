@@ -25,8 +25,13 @@
         </activity>
         <!-- Dashboard Activity Class -->
         <activity
-            android:name="ui"
+            android:name=".ui.DashboardActivity"
+            android:exported="true"
             >
+            <intent-filter>
+                <action android:name="android.intent.action.SECOND" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <!-- Main Activity Class -->
@@ -41,5 +46,6 @@
             tools:ignore="MissingClass">
         </activity>
     </application>
+    <!-- java error: com.example.smarthomeapplication.network.LoginRequest loginRequest);  -->
 
 </manifest>

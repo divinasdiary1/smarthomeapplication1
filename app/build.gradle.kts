@@ -34,6 +34,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    sourceSets {
+        getByName("debug") {
+            java {
+                srcDirs("src/debug/java", "src/debug/java/test")
+            }
+        }
+    }
 
 
     dependencies {
@@ -71,6 +78,10 @@ android {
 kapt {
     correctErrorTypes = true
 }
+}
+dependencies {
+    implementation(libs.testng)
+    implementation(libs.testng)
 }
 
 
