@@ -1,6 +1,7 @@
-package com.example.smarthomeapplication
+package com.example.smarthomeapplication.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.smarthomeapplication.R
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){

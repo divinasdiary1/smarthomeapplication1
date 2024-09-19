@@ -1,4 +1,4 @@
-package com.example.smarthomeapplication
+package com.example.smarthomeapplication.network
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -8,6 +8,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
+import kotlin.apply
+import kotlin.jvm.java
 
 // Creating a Hilt module to provide Retrofit and ApiService instances
 /* This module provides the necessary components to

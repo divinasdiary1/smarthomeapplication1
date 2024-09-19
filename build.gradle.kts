@@ -5,7 +5,15 @@ plugins {
 }
 // Adding hilt dependency
 buildscript {
-    dependencies {
-        classpath ("com.google.dagger:hilt-android-gradle-plugin:2.44")
+    repositories{
+        google()
+        mavenCentral()
+
     }
+   dependencies{
+       classpath("com.android.tools.build:gradle:8.0.2") // Ensure this matches your Android Gradle plugin version
+       classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0") // Match Kotlin version with your project
+       classpath("com.google.dagger:hilt-android-gradle-plugin:2.44") // Hilt for dependency injection
+   }
 }
+
